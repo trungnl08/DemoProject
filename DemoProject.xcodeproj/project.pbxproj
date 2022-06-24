@@ -14,6 +14,18 @@
 		0766AA6D2865C31E00386EAA /* DemoProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0766AA6B2865C31E00386EAA /* DemoProject.xcdatamodeld */; };
 		0766AA6F2865C32000386EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0766AA6E2865C32000386EAA /* Assets.xcassets */; };
 		0766AA722865C32000386EAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0766AA702865C32000386EAA /* LaunchScreen.storyboard */; };
+		0766AA8A2865CAB000386EAA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766AA892865CAB000386EAA /* View.swift */; };
+		0766AA8C2865CBF300386EAA /* TouchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766AA8B2865CBF300386EAA /* TouchEvent.swift */; };
+		0766AA902865CE8400386EAA /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766AA8F2865CE8400386EAA /* CustomView.swift */; };
+		0766AA922865D07200386EAA /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766AA912865D07200386EAA /* Drawing.swift */; };
+		0766AA942865D23A00386EAA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766AA932865D23A00386EAA /* MapView.swift */; };
+		0766AA962865D25500386EAA /* DelegationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766AA952865D25500386EAA /* DelegationPattern.swift */; };
+		0766AA982865D26300386EAA /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766AA972865D26300386EAA /* TableView.swift */; };
+		0766AA9C2865D27F00386EAA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766AA9A2865D27F00386EAA /* TableViewCell.swift */; };
+		0766AA9D2865D27F00386EAA /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0766AA9B2865D27F00386EAA /* TableViewCell.xib */; };
+		0766AAA22865D2CC00386EAA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766AAA02865D2CC00386EAA /* CollectionViewCell.swift */; };
+		0766AAA32865D2CC00386EAA /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0766AAA12865D2CC00386EAA /* CollectionViewCell.xib */; };
+		0766AAA52865D2E200386EAA /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766AAA42865D2E200386EAA /* CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +38,18 @@
 		0766AA6E2865C32000386EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0766AA712865C32000386EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0766AA732865C32000386EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0766AA892865CAB000386EAA /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = SOURCE_ROOT; };
+		0766AA8B2865CBF300386EAA /* TouchEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchEvent.swift; sourceTree = SOURCE_ROOT; };
+		0766AA8F2865CE8400386EAA /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = SOURCE_ROOT; };
+		0766AA912865D07200386EAA /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = SOURCE_ROOT; };
+		0766AA932865D23A00386EAA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = SOURCE_ROOT; };
+		0766AA952865D25500386EAA /* DelegationPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationPattern.swift; sourceTree = SOURCE_ROOT; };
+		0766AA972865D26300386EAA /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = SOURCE_ROOT; };
+		0766AA9A2865D27F00386EAA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0766AA9B2865D27F00386EAA /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		0766AAA02865D2CC00386EAA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		0766AAA12865D2CC00386EAA /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		0766AAA42865D2E200386EAA /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +90,132 @@
 				0766AA702865C32000386EAA /* LaunchScreen.storyboard */,
 				0766AA732865C32000386EAA /* Info.plist */,
 				0766AA6B2865C31E00386EAA /* DemoProject.xcdatamodeld */,
+				0766AA822865CA6B00386EAA /* CustomView */,
+				0766AA7D2865CA6A00386EAA /* DelegationPattern */,
+				0766AA7E2865CA6A00386EAA /* Drawing */,
+				0766AA7F2865CA6A00386EAA /* MapView */,
+				0766AA812865CA6B00386EAA /* NavigationController */,
+				0766AA802865CA6B00386EAA /* Networking */,
+				0766AA7C2865CA6A00386EAA /* StackView */,
+				0766AA852865CA6B00386EAA /* TableView */,
+				0766AA842865CA6B00386EAA /* TouchEvent */,
+				0766AA832865CA6B00386EAA /* View */,
+				0766AA862865CA6B00386EAA /* ViewControllerLifeCycle */,
+				0766AA9E2865D28B00386EAA /* CollectionView */,
 			);
 			path = DemoProject;
+			sourceTree = "<group>";
+		};
+		0766AA7C2865CA6A00386EAA /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
+		0766AA7D2865CA6A00386EAA /* DelegationPattern */ = {
+			isa = PBXGroup;
+			children = (
+				0766AA952865D25500386EAA /* DelegationPattern.swift */,
+			);
+			path = DelegationPattern;
+			sourceTree = "<group>";
+		};
+		0766AA7E2865CA6A00386EAA /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				0766AA912865D07200386EAA /* Drawing.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		0766AA7F2865CA6A00386EAA /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				0766AA932865D23A00386EAA /* MapView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		0766AA802865CA6B00386EAA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0766AA812865CA6B00386EAA /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		0766AA822865CA6B00386EAA /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				0766AA8F2865CE8400386EAA /* CustomView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		0766AA832865CA6B00386EAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0766AA892865CAB000386EAA /* View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0766AA842865CA6B00386EAA /* TouchEvent */ = {
+			isa = PBXGroup;
+			children = (
+				0766AA8B2865CBF300386EAA /* TouchEvent.swift */,
+			);
+			path = TouchEvent;
+			sourceTree = "<group>";
+		};
+		0766AA852865CA6B00386EAA /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				0766AA972865D26300386EAA /* TableView.swift */,
+				0766AA992865D26600386EAA /* Cell */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		0766AA862865CA6B00386EAA /* ViewControllerLifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllerLifeCycle;
+			sourceTree = "<group>";
+		};
+		0766AA992865D26600386EAA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0766AA9A2865D27F00386EAA /* TableViewCell.swift */,
+				0766AA9B2865D27F00386EAA /* TableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0766AA9E2865D28B00386EAA /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0766AA9F2865D2AC00386EAA /* Cell */,
+				0766AAA42865D2E200386EAA /* CollectionView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		0766AA9F2865D2AC00386EAA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0766AAA02865D2CC00386EAA /* CollectionViewCell.swift */,
+				0766AAA12865D2CC00386EAA /* CollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,8 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0766AA722865C32000386EAA /* LaunchScreen.storyboard in Resources */,
+				0766AA9D2865D27F00386EAA /* TableViewCell.xib in Resources */,
 				0766AA6F2865C32000386EAA /* Assets.xcassets in Resources */,
 				0766AA6A2865C31E00386EAA /* Main.storyboard in Resources */,
+				0766AAA32865D2CC00386EAA /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +293,17 @@
 			files = (
 				0766AA6D2865C31E00386EAA /* DemoProject.xcdatamodeld in Sources */,
 				0766AA672865C31E00386EAA /* ViewController.swift in Sources */,
+				0766AAA52865D2E200386EAA /* CollectionView.swift in Sources */,
+				0766AA8A2865CAB000386EAA /* View.swift in Sources */,
+				0766AA902865CE8400386EAA /* CustomView.swift in Sources */,
+				0766AA922865D07200386EAA /* Drawing.swift in Sources */,
 				0766AA632865C31E00386EAA /* AppDelegate.swift in Sources */,
+				0766AA8C2865CBF300386EAA /* TouchEvent.swift in Sources */,
+				0766AA942865D23A00386EAA /* MapView.swift in Sources */,
+				0766AAA22865D2CC00386EAA /* CollectionViewCell.swift in Sources */,
+				0766AA962865D25500386EAA /* DelegationPattern.swift in Sources */,
+				0766AA9C2865D27F00386EAA /* TableViewCell.swift in Sources */,
+				0766AA982865D26300386EAA /* TableView.swift in Sources */,
 				0766AA652865C31E00386EAA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

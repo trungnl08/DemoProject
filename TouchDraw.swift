@@ -8,22 +8,34 @@
 import UIKit
 
 class TouchDraw: UIViewController {
-
+    var path = UIBezierPath()
+        var firstLocation = CGPoint.zero
+        var shapeLayer = CAShapeLayer()
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    func setupView(){
+           view.layer.addSublayer(shapeLayer)
+           self.shapeLayer.lineWidth = 2
+           self.shapeLayer.strokeColor = UIColor.blue.cgColor
+       }
+       
+       override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+           if let location = touches.first?.location(in: view){
+               firstLocation = location
+           }
+       }
+       
+       override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+           if let location = touches.first?.location(in: view) {
+               
+               path.removeAllPoints()
+               path.move(to: firstLocation)
+               path.addLine(to: location)
+               shapeLayer.path = path.cgPath
+           }
+       }
 }
