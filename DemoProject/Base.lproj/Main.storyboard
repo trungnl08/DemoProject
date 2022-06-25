@@ -109,7 +109,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rET-Xl-Lrt">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rET-Xl-Lrt">
                                 <rect key="frame" x="87" y="139" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
@@ -122,6 +122,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gA5-Fa-BtJ" firstAttribute="centerY" secondItem="JYd-mu-RZ4" secondAttribute="centerY" id="3N4-th-zYl"/>
+                            <constraint firstItem="rET-Xl-Lrt" firstAttribute="top" secondItem="DPN-26-80J" secondAttribute="top" constant="95" id="6zY-mo-Gwd"/>
+                            <constraint firstItem="rET-Xl-Lrt" firstAttribute="leading" secondItem="DPN-26-80J" secondAttribute="leading" constant="87" id="ynZ-jO-JEt"/>
                             <constraint firstItem="gA5-Fa-BtJ" firstAttribute="centerX" secondItem="JYd-mu-RZ4" secondAttribute="centerX" id="ypD-WM-x20"/>
                         </constraints>
                     </view>
@@ -310,18 +312,27 @@
         <!--MapView-->
         <scene sceneID="C2m-J1-kkh">
             <objects>
-                <viewController id="dVu-cy-5ON" sceneMemberID="viewController">
+                <viewController id="dVu-cy-5ON" customClass="MapView" customModule="DemoProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zj3-gL-pvT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iRS-bj-hpM">
+                                <rect key="frame" x="0.0" y="172" width="414" height="612"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pSM-WP-heo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="MapView" image="map" catalog="system" id="FWb-7j-m5M"/>
+                    <connections>
+                        <outlet property="mapview" destination="iRS-bj-hpM" id="bA8-9u-ynQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S3J-oU-gcl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5329" y="1355"/>
+            <point key="canvasLocation" x="5328.985507246377" y="1354.6875"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

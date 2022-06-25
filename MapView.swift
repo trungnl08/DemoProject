@@ -6,11 +6,16 @@
 //
 
 import UIKit
+import MapKit
 
 class MapView: UIViewController {
 
+    @IBOutlet weak var mapview: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let initialLocation = CLLocation(latitude: 21.030653, longitude: 105.847130)
+        mapview.centerToLocation(initialLocation)
+
 
         // Do any additional setup after loading the view.
     }
@@ -26,4 +31,16 @@ class MapView: UIViewController {
     }
     */
 
+}
+private extension MKMapView {
+  func centerToLocation(
+    _ location: CLLocation,
+    regionRadius: CLLocationDistance = 1000
+  ) {
+    let coordinateRegion = MKCoordinateRegion(
+      center: location.coordinate,
+      latitudinalMeters: regionRadius,
+      longitudinalMeters: regionRadius)
+    setRegion(coordinateRegion, animated: true)
+  }
 }
