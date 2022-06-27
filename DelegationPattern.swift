@@ -6,9 +6,31 @@
 //
 
 import UIKit
+protocol subViewB {
+    func checking(pass:String)
+}
+class ViewA: subViewB {
+    func checking(pass:String) {
+        print(pass)
+    }
+    
+    
+}
+class ViewB {
+    var delegate: subViewB?
+    
+}
 
 class DelegationPattern: UIViewController {
 
+    @IBAction func Click(_ sender: Any) {
+        let viewA = ViewA()
+        let viewB = ViewB()
+        viewB.delegate = viewA
+        viewB.delegate?.checking(pass: "abc")
+    }
+    @IBOutlet weak var viewb: UIView!
+    @IBOutlet weak var viewa: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,3 +49,5 @@ class DelegationPattern: UIViewController {
     */
 
 }
+
+

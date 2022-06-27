@@ -33,11 +33,11 @@ class DemoView : UIView {
 
 class CustomView: UIViewController {
     
-    @IBOutlet weak var viewcustom: UIView!
+    @IBOutlet weak var viewChild: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         let demo = DemoView(frame: CGRect(x: 50, y: 100, width: 100, height: 125))
-        viewcustom.addSubview(demo)
+        viewChild.addSubview(demo)
         // Do any additional setup after loading the view.
     }
     
