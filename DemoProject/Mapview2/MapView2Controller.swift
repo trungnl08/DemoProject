@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import MapKit
 
 class MapView2Controller: UIViewController {
 
+    @IBOutlet weak var mapview: MKMapView!
+    let manager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +29,8 @@ class MapView2Controller: UIViewController {
     }
     */
 
+}
+
+extension MapView2Controller: CLLocationManagerDelegate {
+    
 }

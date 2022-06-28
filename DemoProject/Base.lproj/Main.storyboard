@@ -117,6 +117,7 @@
                         <segue destination="Anm-Rc-eVC" kind="relationship" relationship="viewControllers" id="t5S-Ir-PzS"/>
                         <segue destination="dVu-cy-5ON" kind="relationship" relationship="viewControllers" id="xc2-pc-kCI"/>
                         <segue destination="uWn-5k-AcO" kind="relationship" relationship="viewControllers" id="VUQ-Ib-Ett"/>
+                        <segue destination="K6b-cS-Jbi" kind="relationship" relationship="viewControllers" id="gTX-g1-RgU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gz-kD-r9B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -522,11 +523,42 @@
             </objects>
             <point key="canvasLocation" x="5328.985507246377" y="1354.6875"/>
         </scene>
+        <!--Mapview2-->
+        <scene sceneID="lYd-JL-Ajf">
+            <objects>
+                <viewController id="K6b-cS-Jbi" customClass="MapView2Controller" customModule="DemoProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S8n-JZ-5pQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9k6-To-QXq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AxU-Q9-wtt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9k6-To-QXq" firstAttribute="top" secondItem="AxU-Q9-wtt" secondAttribute="top" id="7Ab-l6-lTS"/>
+                            <constraint firstItem="9k6-To-QXq" firstAttribute="bottom" secondItem="AxU-Q9-wtt" secondAttribute="bottom" id="7h4-8T-IqV"/>
+                            <constraint firstItem="9k6-To-QXq" firstAttribute="trailing" secondItem="AxU-Q9-wtt" secondAttribute="trailing" id="Nxv-tl-4z1"/>
+                            <constraint firstItem="9k6-To-QXq" firstAttribute="leading" secondItem="AxU-Q9-wtt" secondAttribute="leading" id="zAP-YT-Wed"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mapview2" image="car" catalog="system" id="67g-rx-bPI"/>
+                    <connections>
+                        <outlet property="mapview" destination="9k6-To-QXq" id="ebT-bd-dCM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ns-5B-wv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6092.753623188406" y="905.35714285714278"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="N8v-Wt-sYx"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="car" catalog="system" width="128" height="93"/>
         <image name="cursorarrow.click" catalog="system" width="128" height="124"/>
         <image name="hand.draw" catalog="system" width="128" height="113"/>
         <image name="lifepreserver" catalog="system" width="128" height="121"/>
