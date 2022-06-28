@@ -49,7 +49,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jae-Ac-7RE">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jae-Ac-7RE">
                                 <rect key="frame" x="42" y="189" width="189" height="139"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfM-mK-9BB">
@@ -82,6 +82,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jae-Ac-7RE" firstAttribute="top" secondItem="2WJ-uc-go5" secondAttribute="top" constant="150" id="pft-im-RDA"/>
+                            <constraint firstItem="jae-Ac-7RE" firstAttribute="leading" secondItem="2WJ-uc-go5" secondAttribute="leading" constant="42" id="r2C-ly-wlx"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="StackView" image="list.triangle" catalog="system" id="OW4-gt-DkA"/>
@@ -499,13 +500,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iRS-bj-hpM">
-                                <rect key="frame" x="0.0" y="172" width="414" height="612"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iRS-bj-hpM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pSM-WP-heo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iRS-bj-hpM" firstAttribute="leading" secondItem="pSM-WP-heo" secondAttribute="leading" id="3xX-KW-dwg"/>
+                            <constraint firstItem="iRS-bj-hpM" firstAttribute="top" secondItem="pSM-WP-heo" secondAttribute="top" id="6xS-8o-i9a"/>
+                            <constraint firstItem="pSM-WP-heo" firstAttribute="bottom" secondItem="iRS-bj-hpM" secondAttribute="bottom" id="RI2-5G-TEN"/>
+                            <constraint firstItem="iRS-bj-hpM" firstAttribute="trailing" secondItem="pSM-WP-heo" secondAttribute="trailing" id="zc8-oY-gkv"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="MapView" image="map" catalog="system" id="FWb-7j-m5M"/>
                     <connections>

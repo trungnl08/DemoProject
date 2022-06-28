@@ -24,6 +24,7 @@ class CurrentWeather : Mappable {
         uv <- map["current.uv"]
     }
 }
+
 class NetworkController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var labelUV: UILabel!
