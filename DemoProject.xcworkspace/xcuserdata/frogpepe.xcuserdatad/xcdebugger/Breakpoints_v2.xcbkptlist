@@ -14,9 +14,9 @@
             filePath = "DemoProject/Mapview2/MapView2Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "resizeImage(image:targetSize:)"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "constructRoute(userLocation:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

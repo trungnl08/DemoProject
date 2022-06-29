@@ -11,6 +11,7 @@ import MapKit
 class MapView2Controller: UIViewController {
     
     @IBOutlet weak var mapview: MKMapView!
+ 
     
     private let manager = CLLocationManager()
     private var currentLocation: CLLocationCoordinate2D?
@@ -42,7 +43,7 @@ class MapView2Controller: UIViewController {
         manager.startUpdatingLocation()
     }
     private func zoomToLastestLocation(with coordinate: CLLocationCoordinate2D){
-        let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
+        let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 5000, longitudinalMeters: 5000)
         mapview.setRegion(region, animated: true)
         
     }
@@ -65,7 +66,7 @@ class MapView2Controller: UIViewController {
         let directionsRequest = MKDirections.Request()
         
         directionsRequest.source = MKMapItem(placemark: MKPlacemark(coordinate: userLocation))
-        directionsRequest.destination =  MKMapItem(placemark: MKPlacemark(coordinate: destications[1].coordinate))
+        directionsRequest.destination =  MKMapItem(placemark: MKPlacemark(coordinate: destications[0].coordinate))
         directionsRequest.requestsAlternateRoutes = true
         directionsRequest.transportType = .automobile
         
@@ -77,9 +78,9 @@ class MapView2Controller: UIViewController {
                 print("error there")
                 print(error.localizedDescription)
             } else if let response = directionsResponse, response.routes.count > 0 {
-                strongSelf.currentRoute = response.routes[1]
-                strongSelf.mapview.addOverlay(response.routes[1].polyline)
-                strongSelf.mapview.setVisibleMapRect(response.routes[1].polyline.boundingMapRect, animated: true)
+                strongSelf.currentRoute = response.routes[0]
+                strongSelf.mapview.addOverlay(response.routes[0].polyline)
+                strongSelf.mapview.setVisibleMapRect(response.routes[0].polyline.boundingMapRect, animated: true)
             }
         }
     }
@@ -138,6 +139,9 @@ extension MapView2Controller: MKMapViewDelegate {
         }
         annotationView?.canShowCallout = true
         return annotationView
+    }
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        print(view.annotation?.title)
     }
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         guard let currentRoute = currentRoute else {
