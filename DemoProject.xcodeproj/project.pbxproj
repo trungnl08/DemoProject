@@ -27,7 +27,6 @@
 		0766AAA32865D2CC00386EAA /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0766AAA12865D2CC00386EAA /* CollectionViewCell.xib */; };
 		0766AAA52865D2E200386EAA /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766AAA42865D2E200386EAA /* CollectionView.swift */; };
 		079E1275286AEDEC00E7DD95 /* MapView2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079E1274286AEDEC00E7DD95 /* MapView2Controller.swift */; };
-		079E1277286BF36900E7DD95 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079E1276286BF36900E7DD95 /* CustomAnnotation.swift */; };
 		07D2E6B12869AD7600AAF99D /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2E6B02869AD7600AAF99D /* Entity+CoreDataClass.swift */; };
 		07D2E6B22869AD7600AAF99D /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2E6AF2869AD7600AAF99D /* Entity+CoreDataProperties.swift */; };
 		07D2E6B6286AAFAD00AAF99D /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2E6B5286AAFAD00AAF99D /* ApiManager.swift */; };
@@ -62,7 +61,6 @@
 		0766AAA12865D2CC00386EAA /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		0766AAA42865D2E200386EAA /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		079E1274286AEDEC00E7DD95 /* MapView2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView2Controller.swift; sourceTree = "<group>"; };
-		079E1276286BF36900E7DD95 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		07D2E6AF2869AD7600AAF99D /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Entity+CoreDataProperties.swift"; path = "/Users/frogpepe/Desktop/WorkSpace/DemoProject/DemoProject/Entity+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		07D2E6B02869AD7600AAF99D /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Entity+CoreDataClass.swift"; path = "/Users/frogpepe/Desktop/WorkSpace/DemoProject/DemoProject/Entity+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		07D2E6B5286AAFAD00AAF99D /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -247,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				079E1274286AEDEC00E7DD95 /* MapView2Controller.swift */,
-				079E1276286BF36900E7DD95 /* CustomAnnotation.swift */,
 			);
 			path = Mapview2;
 			sourceTree = "<group>";
@@ -409,7 +406,6 @@
 				07DD04DD286955DF00F64F8A /* ViewControllerLifecycle.swift in Sources */,
 				0766AA8C2865CBF300386EAA /* TouchEvent.swift in Sources */,
 				07D2E6B6286AAFAD00AAF99D /* ApiManager.swift in Sources */,
-				079E1277286BF36900E7DD95 /* CustomAnnotation.swift in Sources */,
 				0766AA942865D23A00386EAA /* MapView.swift in Sources */,
 				0766AAA22865D2CC00386EAA /* CollectionViewCell.swift in Sources */,
 				0766AA962865D25500386EAA /* DelegationPattern.swift in Sources */,
