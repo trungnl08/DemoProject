@@ -35,10 +35,6 @@ class MapView: UIViewController {
             let span = MKCoordinateSpan(latitudeDelta: 50, longitudeDelta: 50)
             let region = MKCoordinateRegion(center: coordinate, span:span)
             self.mapview.setRegion(region, animated: true)
-            let marker = MKPointAnnotation()
-            marker.coordinate = coordinate
-            marker.title = "first test"
-            self.mapview.addAnnotation(marker)
             self.mapview.addAnnotations(annotations)
 
         }
