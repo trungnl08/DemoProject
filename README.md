@@ -5,7 +5,7 @@ List lesson listed in Tab bar
 
 Content:
 
-1.View : Add a view programmatically.  <br/>   
+1.View : Add a view programmatically.  <br/>
 2.Touch event: Touch any where and move to draw a line. Or touch on view to move the view.  <br/>
 3.Custom view: Add a view programmatically. <br/>
 4. Drawing: Draw somethings by programmatically. <br/>
