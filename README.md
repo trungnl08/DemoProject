@@ -1,7 +1,7 @@
 # DemoProject
 List lesson listed in Tab bar
 
-![Simulator Screen Shot - iPhone 13 Pro Max - 2022-06-30 at 14 38 26](https://user-images.githubusercontent.com/70845041/176620974-18ede814-21ca-4e76-80db-8b2ea5ccbd0f.png)
+![Simulator Screen Shot - iPhone 13 Pro Max - 2022-06-30 at 14 38 26](https://user-images.githubusercontent.com/70845041/176620974-18ede814-21ca-4e76-80db-8b2ea5ccbd0f.png =300x300)
 
 Content:
 
