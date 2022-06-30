@@ -18,6 +18,14 @@ class TableView: UIViewController {
     ]
     var fetchedResultsController: NSFetchedResultsController<Entity>!
     
+    @IBAction func AddButton(_ sender: Any) {
+        save(name: "Trung666")
+        //        tableview.beginUpdates()
+        //        let indexPath : IndexPath = IndexPath(row:(fetchedResultsController.fetchedObjects!.count - 1),section: 0)
+        //        tableview.insertRows(at: [indexPath], with: .left)
+        //        tableview.endUpdates()
+        tableview.reloadData()
+    }
     @IBOutlet weak var tableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +38,7 @@ class TableView: UIViewController {
         
     }
     override func viewWillAppear(_ animated: Bool) {
-        save(name: "Trung1")
-   
+        tableview.reloadData()
         
     }
     func save(name: String) {
@@ -86,7 +93,26 @@ extension TableView : UITableViewDelegate, UITableViewDataSource {
         return "IOS"
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
+        if editingStyle == .delete {
+            // lấy AppDelegate
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+            
+            // lấy Managed Object Context
+            let managedContext = appDelegate.persistentContainer.viewContext
+            
+            // lấy item ra để xoá
+            let user = fetchedResultsController.object(at: indexPath)
+            
+            // delete
+            managedContext.delete(user)
+            
+            //save context
+            do {
+                try managedContext.save()
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
+        }
     }
     
     
@@ -116,6 +142,28 @@ extension TableView : NSFetchedResultsControllerDelegate {
             try fetchedResultsController.performFetch()
         } catch {
             fatalError("Failed to initialize FetchedResultsController: \(error)")
+        }
+    }
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        switch (type) {
+        case .insert:
+            print("insert")
+            if let indexPath = newIndexPath {
+                tableview.insertRows(at: [indexPath], with: .fade)
+            }
+            break;
+        case .delete:
+            print("delete")
+            if let indexPath = indexPath {
+                tableview.deleteRows(at: [indexPath], with: .fade)
+            }
+            break;
+        case .update:
+            print("update")
+            tableview.reloadRows(at: [indexPath!], with: .automatic)
+            break;
+        default:
+            print("default")
         }
     }
 }

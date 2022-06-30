@@ -241,13 +241,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Edv-87-vfr">
-                                <rect key="frame" x="0.0" y="60" width="414" height="753"/>
+                                <rect key="frame" x="0.0" y="175" width="414" height="638"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZ3-W3-pQC">
+                                <rect key="frame" x="183" y="93" width="50" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                <connections>
+                                    <action selector="AddButton:" destination="lZf-mL-bdK" eventType="touchUpInside" id="ZDg-qm-zf6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xuP-UW-3Ds"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JZ3-W3-pQC" firstAttribute="top" secondItem="xuP-UW-3Ds" secondAttribute="top" constant="49" id="jrn-jj-lAG"/>
+                            <constraint firstItem="JZ3-W3-pQC" firstAttribute="leading" secondItem="xuP-UW-3Ds" secondAttribute="leading" constant="183" id="kgT-DE-fYf"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="TableView+CoreData" image="table.badge.more" catalog="system" id="STr-S9-9tX"/>
                     <connections>
