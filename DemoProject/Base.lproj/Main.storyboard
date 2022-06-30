@@ -41,59 +41,6 @@
             </objects>
             <point key="canvasLocation" x="1981" y="435"/>
         </scene>
-        <!--StackView-->
-        <scene sceneID="MUr-59-2jN">
-            <objects>
-                <viewController id="uWn-5k-AcO" customClass="StackViewController" customModule="DemoProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dXk-LB-tAS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jae-Ac-7RE">
-                                <rect key="frame" x="42" y="189" width="189" height="139"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfM-mK-9BB">
-                                        <rect key="frame" x="0.0" y="0.0" width="189" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Toggle vertical/Horizonatl"/>
-                                        <connections>
-                                            <action selector="toggleVerti:" destination="uWn-5k-AcO" eventType="touchUpInside" id="wRK-tT-9Zt"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbZ-iA-qYt">
-                                        <rect key="frame" x="0.0" y="36" width="189" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4v-if-uEn">
-                                        <rect key="frame" x="0.0" y="72" width="189" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWu-lk-WgI">
-                                        <rect key="frame" x="0.0" y="108" width="189" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="2WJ-uc-go5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="jae-Ac-7RE" firstAttribute="top" secondItem="2WJ-uc-go5" secondAttribute="top" constant="150" id="pft-im-RDA"/>
-                            <constraint firstItem="jae-Ac-7RE" firstAttribute="leading" secondItem="2WJ-uc-go5" secondAttribute="leading" constant="42" id="r2C-ly-wlx"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="StackView" image="list.triangle" catalog="system" id="OW4-gt-DkA"/>
-                    <connections>
-                        <outlet property="stackview" destination="jae-Ac-7RE" id="3jT-hs-6N5"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bsR-Wn-2Qj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1046.376811594203" y="-691.07142857142856"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oDt-lJ-Z5A">
             <objects>
@@ -116,7 +63,6 @@
                         <segue destination="o5a-a0-Mlt" kind="relationship" relationship="viewControllers" id="KNM-XG-yus"/>
                         <segue destination="Anm-Rc-eVC" kind="relationship" relationship="viewControllers" id="t5S-Ir-PzS"/>
                         <segue destination="dVu-cy-5ON" kind="relationship" relationship="viewControllers" id="xc2-pc-kCI"/>
-                        <segue destination="uWn-5k-AcO" kind="relationship" relationship="viewControllers" id="VUQ-Ib-Ett"/>
                         <segue destination="K6b-cS-Jbi" kind="relationship" relationship="viewControllers" id="gTX-g1-RgU"/>
                     </connections>
                 </tabBarController>
@@ -575,7 +521,6 @@
         <image name="hand.draw" catalog="system" width="128" height="113"/>
         <image name="lifepreserver" catalog="system" width="128" height="121"/>
         <image name="list.dash.header.rectangle" catalog="system" width="128" height="93"/>
-        <image name="list.triangle" catalog="system" width="128" height="91"/>
         <image name="macpro.gen3.server" catalog="system" width="128" height="75"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="move.3d" catalog="system" width="128" height="106"/>

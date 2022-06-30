@@ -31,7 +31,6 @@
 		07D2E6B22869AD7600AAF99D /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2E6AF2869AD7600AAF99D /* Entity+CoreDataProperties.swift */; };
 		07D2E6B6286AAFAD00AAF99D /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2E6B5286AAFAD00AAF99D /* ApiManager.swift */; };
 		07D2E6B9286AB05700AAF99D /* ApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2E6B8286AB05700AAF99D /* ApiModel.swift */; };
-		07DD04DB286950AD00F64F8A /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD04DA286950AD00F64F8A /* StackViewController.swift */; };
 		07DD04DD286955DF00F64F8A /* ViewControllerLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD04DC286955DF00F64F8A /* ViewControllerLifecycle.swift */; };
 		07DD04E028695C5600F64F8A /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD04DF28695C5600F64F8A /* NetworkController.swift */; };
 		C3D61D61C18A75259FE96A58 /* Pods_DemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05863986AC9A0DFF7EBA944B /* Pods_DemoProject.framework */; };
@@ -65,7 +64,6 @@
 		07D2E6B02869AD7600AAF99D /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Entity+CoreDataClass.swift"; path = "/Users/frogpepe/Desktop/WorkSpace/DemoProject/DemoProject/Entity+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		07D2E6B5286AAFAD00AAF99D /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		07D2E6B8286AB05700AAF99D /* ApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiModel.swift; sourceTree = "<group>"; };
-		07DD04DA286950AD00F64F8A /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = SOURCE_ROOT; };
 		07DD04DC286955DF00F64F8A /* ViewControllerLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycle.swift; sourceTree = "<group>"; };
 		07DD04DF28695C5600F64F8A /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		4DB44ABBCFC463D55AFAC4B9 /* Pods-DemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProject.release.xcconfig"; path = "Target Support Files/Pods-DemoProject/Pods-DemoProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 				0766AA7E2865CA6A00386EAA /* Drawing */,
 				0766AA7F2865CA6A00386EAA /* MapView */,
 				0766AA812865CA6B00386EAA /* NavigationController */,
-				0766AA7C2865CA6A00386EAA /* StackView */,
 				0766AA852865CA6B00386EAA /* TableView */,
 				0766AA842865CA6B00386EAA /* TouchEvent */,
 				0766AA832865CA6B00386EAA /* View */,
@@ -130,14 +127,6 @@
 				0766AA9E2865D28B00386EAA /* CollectionView */,
 			);
 			path = DemoProject;
-			sourceTree = "<group>";
-		};
-		0766AA7C2865CA6A00386EAA /* StackView */ = {
-			isa = PBXGroup;
-			children = (
-				07DD04DA286950AD00F64F8A /* StackViewController.swift */,
-			);
-			path = StackView;
 			sourceTree = "<group>";
 		};
 		0766AA7D2865CA6A00386EAA /* DelegationPattern */ = {
@@ -411,7 +400,6 @@
 				0766AA962865D25500386EAA /* DelegationPattern.swift in Sources */,
 				0766AA9C2865D27F00386EAA /* TableViewCell.swift in Sources */,
 				079E1275286AEDEC00E7DD95 /* MapView2Controller.swift in Sources */,
-				07DD04DB286950AD00F64F8A /* StackViewController.swift in Sources */,
 				0766AA982865D26300386EAA /* TableView.swift in Sources */,
 				0766AA652865C31E00386EAA /* SceneDelegate.swift in Sources */,
 			);
